@@ -38,3 +38,17 @@ src/Shelter/Shelter\.Web/bin/Debug/netcoreapp2\.1/
 Shelter/\.idea/\.idea\.Shelter/\.idea/
 
 Shelter/\.idea/\.idea\.Shelter/
+
+tests/Shelter\.Auth/Shelter\.Auth\.Data\.Tests/obj/
+
+tests/Shelter/Shelter\.Data\.Tests/obj/Debug/netcoreapp2\.1/
+
+tests/Shelter/Shelter\.Core\.Tests/obj/Debug/netcoreapp2\.1/
+
+tests/Shelter/Shelter\.Core\.Tests/bin/Debug/netcoreapp2\.1/
+
+tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/obj/Debug/netcoreapp2\.1/
+
+tests/Shelter/Shelter\.Web\.Tests/obj/Debug/netcoreapp2\.1/
+
+tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/obj/
