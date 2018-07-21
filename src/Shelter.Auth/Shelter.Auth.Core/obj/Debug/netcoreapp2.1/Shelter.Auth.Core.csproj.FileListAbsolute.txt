@@ -1,0 +1,14 @@
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Shelter.Auth.Core.deps.json
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Shelter.Auth.Core.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Shelter.Auth.Core.pdb
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Shelter.Core.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Shelter.Core.pdb
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.csproj.CoreCompileInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.AssemblyInfoInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.AssemblyInfo.cs
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.csproj.CopyComplete
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.pdb
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Identity.Stores.xml
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter.Auth/Shelter.Auth.Core/obj/Debug/netcoreapp2.1/Shelter.Auth.Core.csprojAssemblyReference.cache

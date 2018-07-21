@@ -1,0 +1,51 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/shaykhullin/Git/Shelter/src/Shelter/Shelter.Validation/Shelter.Validation.csproj",
+    "projectName": "Shelter.Validation",
+    "projectPath": "/home/shaykhullin/Git/Shelter/src/Shelter/Shelter.Validation/Shelter.Validation.csproj",
+    "outputPath": "/home/shaykhullin/Git/Shelter/src/Shelter/Shelter.Validation/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/home/shaykhullin/Git/Shelter/src/Shelter/Shelter.Localization/Shelter.Localization.csproj": {
+            "projectPath": "/home/shaykhullin/Git/Shelter/src/Shelter/Shelter.Localization/Shelter.Localization.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/bin/Debug/netcoreapp2.1/Shelter.Core.deps.json
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/bin/Debug/netcoreapp2.1/Shelter.Core.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/bin/Debug/netcoreapp2.1/Shelter.Core.pdb
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.csprojAssemblyReference.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.csproj.CoreCompileInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.AssemblyInfoInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.AssemblyInfo.cs
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Core/obj/Debug/netcoreapp2.1/Shelter.Core.pdb

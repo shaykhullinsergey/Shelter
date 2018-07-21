@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Shelter.377630834.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Shelter.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="Shelter" t="Include">
+          <e p="Shelter.Core" t="IncludeRecursive">
+            <e p="Class1.cs" t="Include" />
+            <e p="Shelter.Core.csproj" t="IncludeRecursive" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Core.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Data" t="IncludeRecursive">
+            <e p="Class1.cs" t="Include" />
+            <e p="Shelter.Data.csproj" t="IncludeRecursive" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Data.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Localization" t="IncludeRecursive">
+            <e p="ILocalization.cs" t="Include" />
+            <e p="ILocalizationMessage.cs" t="Include" />
+            <e p="Localization.cs" t="Include" />
+            <e p="LocalizationMessage.cs" t="Include" />
+            <e p="LocalizationSection.cs" t="Include" />
+            <e p="Shelter.Localization.csproj" t="IncludeRecursive" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Localization.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Validation" t="IncludeRecursive">
+            <e p="AddValidator.cs" t="Include" />
+            <e p="Class1.cs" t="Include" />
+            <e p="IfValidator.cs" t="Include" />
+            <e p="Shelter.Validation.csproj" t="IncludeRecursive" />
+            <e p="ValidationExtensions.cs" t="Include" />
+            <e p="ValidationMessage.cs" t="Include" />
+            <e p="Validator.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Validation.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Web" t="IncludeRecursive">
+            <e p="Configuration" t="Include">
+              <e p="CredentialsConfiguration.cs" t="Include" />
+              <e p="JwtConfiguration.cs" t="Include" />
+              <e p="ServiceConfiguration.cs" t="Include" />
+              <e p="ServicesConfiguration.cs" t="Include" />
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="ShelterController.cs" t="Include" />
+            </e>
+            <e p="Extensions" t="Include">
+              <e p="AuthenticationExtensions.cs" t="Include" />
+              <e p="ConfigurationExtensions.cs" t="Include" />
+              <e p="GateExtensions.cs" t="Include" />
+              <e p="LocalizationExtensions.cs" t="Include" />
+              <e p="MiddlewareExtensions.cs" t="Include" />
+              <e p="MvcExtensions.cs" t="Include" />
+            </e>
+            <e p="Filters" t="Include">
+              <e p="ModelStateFilter.cs" t="Include" />
+            </e>
+            <e p="Gates" t="Include">
+              <e p="Auth" t="Include">
+                <e p="AuthGate.cs" t="Include" />
+                <e p="IAuthGate.cs" t="Include" />
+              </e>
+              <e p="Emails" t="Include">
+                <e p="EmailsGate.cs" t="Include" />
+                <e p="IEmailsGate.cs" t="Include" />
+              </e>
+              <e p="Errors" t="Include">
+                <e p="ErrorsGate.cs" t="Include" />
+                <e p="IErrorsGate.cs" t="Include" />
+              </e>
+              <e p="Files" t="Include">
+                <e p="FilesGate.cs" t="Include" />
+                <e p="IFilesGate.cs" t="Include" />
+              </e>
+              <e p="Mangas" t="Include">
+                <e p="IMangasGate.cs" t="Include" />
+                <e p="MangasGate.cs" t="Include" />
+              </e>
+              <e p="News" t="Include">
+                <e p="INewsGate.cs" t="Include" />
+                <e p="NewsGate.cs" t="Include" />
+              </e>
+              <e p="Profiles" t="Include">
+                <e p="IProfilesGate.cs" t="Include" />
+                <e p="ProfilesGate.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Middleware" t="Include">
+              <e p="ErrorHandlingMiddleware.cs" t="Include" />
+            </e>
+            <e p="Shelter.Web.csproj" t="IncludeRecursive" />
+            <e p="ViewModels" t="Include">
+              <e p="ShelterResponseViewModel.cs" t="Include" />
+            </e>
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Web.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Shelter.Auth" t="Include">
+          <e p="Shelter.Auth.Core" t="IncludeRecursive">
+            <e p="AuthUser.cs" t="Include" />
+            <e p="Shelter.Auth.Core.csproj" t="IncludeRecursive" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Auth.Core.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Auth.Data" t="IncludeRecursive">
+            <e p="AuthContext.cs" t="Include" />
+            <e p="Shelter.Auth.Data.csproj" t="IncludeRecursive" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Auth.Data.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Auth.Web" t="IncludeRecursive">
+            <e p="AuthConfiguration.cs" t="Include" />
+            <e p="Controllers" t="Include">
+              <e p="AuthController.cs" t="Include" />
+            </e>
+            <e p="Extensions" t="Include">
+              <e p="ConfigurationExtensions.cs" t="Include" />
+              <e p="IdentityExtensions.cs" t="Include" />
+            </e>
+            <e p="Localization" t="Include">
+              <e p="English" t="Include">
+                <e p="EnglishAuthLocalization.cs" t="Include" />
+                <e p="Sections" t="Include">
+                  <e p="EnglishAuthValidationSection.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Russian" t="Include">
+                <e p="RussianAuthLocalization.cs" t="Include" />
+                <e p="Sections" t="Include">
+                  <e p="RussianAuthValidationSection.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Program.cs" t="Include" />
+            <e p="Properties" t="Include">
+              <e p="launchSettings.json" t="Include" />
+            </e>
+            <e p="Shelter.Auth.Web.csproj" t="IncludeRecursive" />
+            <e p="Startup.cs" t="Include" />
+            <e p="Validation" t="Include">
+              <e p="AuthValidation.cs" t="Include" />
+            </e>
+            <e p="ViewModels" t="Include">
+              <e p="SignupViewModel.cs" t="Include" />
+            </e>
+            <e p="appsettings.json" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Auth.Web.AssemblyInfo.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="tests" t="Include">
+        <e p="Shelter" t="Include">
+          <e p="Shelter.Core.Tests" t="IncludeRecursive">
+            <e p="Shelter.Core.Tests.csproj" t="IncludeRecursive" />
+            <e p="UnitTest1.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Core.Tests.AssemblyInfo.cs" t="Include" />
+                  <e p="Shelter.Core.Tests.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Data.Tests" t="IncludeRecursive">
+            <e p="Shelter.Data.Tests.csproj" t="IncludeRecursive" />
+            <e p="UnitTest1.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Data.Tests.AssemblyInfo.cs" t="Include" />
+                  <e p="Shelter.Data.Tests.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Web.Tests" t="IncludeRecursive">
+            <e p="Shelter.Web.Tests.csproj" t="IncludeRecursive" />
+            <e p="UnitTest1.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Web.Tests.AssemblyInfo.cs" t="Include" />
+                  <e p="Shelter.Web.Tests.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Shelter.Auth" t="Include">
+          <e p="Shelter.Auth.Data.Tests" t="IncludeRecursive">
+            <e p="Shelter.Auth.Data.Tests.csproj" t="IncludeRecursive" />
+            <e p="UnitTest1.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Auth.Data.Tests.AssemblyInfo.cs" t="Include" />
+                  <e p="Shelter.Auth.Data.Tests.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Shelter.Auth.Web.Tests" t="IncludeRecursive">
+            <e p="Shelter.Auth.Web.Tests.csproj" t="IncludeRecursive" />
+            <e p="UnitTest1.cs" t="Include" />
+            <e p="bin" t="ExcludeRecursive" />
+            <e p="obj" t="ExcludeRecursive">
+              <e p="Debug" t="Include">
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Shelter.Auth.Web.Tests.AssemblyInfo.cs" t="Include" />
+                  <e p="Shelter.Auth.Web.Tests.Program.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

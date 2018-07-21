@@ -1,0 +1,9 @@
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.csprojAssemblyReference.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.csproj.CoreCompileInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.AssemblyInfoInputs.cache
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.AssemblyInfo.cs
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/bin/Debug/netcoreapp2.1/Shelter.Localization.deps.json
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/bin/Debug/netcoreapp2.1/Shelter.Localization.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/bin/Debug/netcoreapp2.1/Shelter.Localization.pdb
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.dll
+/home/shaykhullin/Git/Shelter/Shelter/src/Shelter/Shelter.Localization/obj/Debug/netcoreapp2.1/Shelter.Localization.pdb
