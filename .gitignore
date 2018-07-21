@@ -60,3 +60,5 @@ tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/bin/Debug/netcoreapp2\.1/
 tests/Shelter/Shelter\.Data\.Tests/bin/Debug/netcoreapp2\.1/
 
 tests/Shelter/Shelter\.Web\.Tests/bin/Debug/netcoreapp2\.1/
+
+\.idea/\.idea\.Shelter/\.idea/
