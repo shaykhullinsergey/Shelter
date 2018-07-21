@@ -4,7 +4,7 @@
 	{
 		public EnglishAuthLocalization()
 		{
-			AddSection<AuthValidation, EnglishAuthValidationSection>();
+			AddSection<SignupSection, EnglishSignupSection>();
 		}
 	}
 }

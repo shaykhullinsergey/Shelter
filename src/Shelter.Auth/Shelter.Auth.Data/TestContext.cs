@@ -13,7 +13,7 @@ namespace Shelter
 		{
 			validationContext.Validate(this, x => x.Test)
 				.If(test => true)
-				.Add<AuthValidation>(x => x.PasswordIsRequired);
+				.Add<AuthValidation>(x => x.Signup.PasswordIsRequired);
 
 			return validationContext.Summary();
 		}

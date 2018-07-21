@@ -4,7 +4,7 @@
 	{
 		public RussianAuthLocalization()
 		{
-			AddSection<AuthValidation, RussianAuthValidationSection>();
+			AddSection<SignupSection, RussianSignupSection>();
 		}
 	}
 }
