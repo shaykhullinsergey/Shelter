@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -23,21 +24,38 @@ namespace Shelter
 			{
 				await next(context);
 			}
+			catch (ShelterValidationException exception)
+			{
+				var model = new ShelterResponseViewModel<Dictionary<string, string[]>>
+				{
+					Success = false,
+					Data = exception.GetValidationMessage()
+				};
+
+				await HandleExceptionAsync(context, HttpStatusCode.BadRequest, model, options);
+			}
 			catch (Exception exception)
 			{
-				var code = HttpStatusCode.InternalServerError;
-
 				var model = new ShelterResponseViewModel<string>
 				{
 					Success = false,
 					Data = exception.Message
 				};
-
-				var result = JsonConvert.SerializeObject(model, options.Value.SerializerSettings);
-				context.Response.ContentType = "application/json";
-				context.Response.StatusCode = (int)code;
-				await context.Response.WriteAsync(result);
+				
+				await HandleExceptionAsync(context, HttpStatusCode.InternalServerError, model, options);
 			}
+		}
+
+		private async Task HandleExceptionAsync(
+			HttpContext context, 
+			HttpStatusCode code, 
+			ShelterResponseViewModel model, 
+			IOptions<MvcJsonOptions> options)
+		{
+			var result = JsonConvert.SerializeObject(model, options.Value.SerializerSettings);
+			context.Response.ContentType = "application/json";
+			context.Response.StatusCode = (int)code;
+			await context.Response.WriteAsync(result);
 		}
 	}
 }

@@ -6,9 +6,15 @@ namespace Shelter
 	public class AuthController : ShelterController
 	{
 		[HttpPost]
-		public string Signup(SignupViewModel model, [FromServices] IEmailsGate emails)
+		public string Signup(SignupViewModel model, [FromServices] TestContext context)
 		{
-			return emails.GetString();
+			var e = new TestEntity();
+
+			context.Add(e);
+
+			context.SaveChanges();
+
+			return "asd";
 		}
 	}
 }

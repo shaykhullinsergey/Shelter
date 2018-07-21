@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Shelter
 {
 	public interface IAddValidator
 	{
-		void Add<TValidationDictionary>(Func<TValidationDictionary, ValidationMessage> selector);
-		void Add<TValidationDictionary, TValue>(Func<TValidationDictionary, ValidationMessage<TValue>> selector, TValue value);
+		void Add<TValidationDictionary>(Func<TValidationDictionary, ValidationMessage> selector)
+			where TValidationDictionary : class;
+		
+		void Add<TValidationDictionary, TValue>(Func<TValidationDictionary, ValidationMessage<TValue>> selector, TValue value)
+			where TValidationDictionary : class;
 	}
 
 	internal class AddValidator : IAddValidator
@@ -27,20 +29,22 @@ namespace Shelter
 		}
 			
 		public void Add<TValidationDictionary>(Func<TValidationDictionary, ValidationMessage> selector)
+			where TValidationDictionary : class
 		{
 			if (result)
 			{
-				var dictionary = validationContext.GetRequiredService<TValidationDictionary>();
+				var dictionary = (TValidationDictionary)validationContext.GetService(typeof(TValidationDictionary));
 				
 				results.Add(new ValidationResult(selector(dictionary).GetMessage(), new[]{name}));
 			}
 		}
 		
 		public void Add<TValidationDictionary, TValue>(Func<TValidationDictionary, ValidationMessage<TValue>> selector, TValue value)
+			where TValidationDictionary : class
 		{
 			if (result)
 			{
-				var dictionary = validationContext.GetRequiredService<TValidationDictionary>();
+				var dictionary = (TValidationDictionary)validationContext.GetService(typeof(TValidationDictionary));
 				
 				results.Add(new ValidationResult(selector(dictionary).GetMessage(value), new[]{name}));
 			}

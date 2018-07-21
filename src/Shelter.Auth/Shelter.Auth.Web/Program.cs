@@ -7,9 +7,11 @@ namespace Shelter
 	{
 		public static void Main(string[] args)
 		{
-			WebHost.CreateDefaultBuilder<Startup>(args)
-				.Build()
-				.Run();
+			BuildWebHost(args).Run();
 		}
+
+		private static IWebHost BuildWebHost(string[] args) =>
+			WebHost.CreateDefaultBuilder<Startup>(args)
+				.Build();
 	}
 }

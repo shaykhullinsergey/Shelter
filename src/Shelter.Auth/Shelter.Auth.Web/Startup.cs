@@ -29,6 +29,8 @@ namespace Shelter
 			
 			services.AddDbContextPool<AuthContext>(options =>
 				options.UseInMemoryDatabase(nameof(AuthContext)));
+
+			services.AddShelterInMemoryDbContextPool<TestContext>();
 			
 			services.AddShelterIdentity();
 			services.AddShelterAuthentication();

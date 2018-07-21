@@ -3,9 +3,6 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Shelter.Localization\Shelter.Localization.csproj" />
   </ItemGroup>
 </Project>

@@ -62,3 +62,9 @@ tests/Shelter/Shelter\.Data\.Tests/bin/Debug/netcoreapp2\.1/
 tests/Shelter/Shelter\.Web\.Tests/bin/Debug/netcoreapp2\.1/
 
 \.idea/\.idea\.Shelter/\.idea/
+
+tests/Shelter/Shelter\.Data\.Tests/obj/
+
+tests/Shelter/Shelter\.Web\.Tests/obj/
+
+tests/Shelter/Shelter\.Core\.Tests/obj/

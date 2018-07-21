@@ -3,4 +3,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>Shelter</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shelter.Validation\Shelter.Validation.csproj" />
+  </ItemGroup>
 </Project>

@@ -27,9 +27,9 @@ namespace Shelter
 
 		public IAddValidator If(Func<TProperty, bool> predicate)
 		{
-			var result = results.Any(x => x.MemberNames.Any(n => n == name)) || predicate(value);
-			
-			return new AddValidator(validationContext, name, result, results);
+			return results.Any(x => x.MemberNames.Any(n => n == name)) 
+				? new AddValidator(validationContext, name, false, results) 
+				: new AddValidator(validationContext, name, predicate(value), results);
 		}
 	}
 }
