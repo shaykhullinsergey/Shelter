@@ -52,3 +52,11 @@ tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/obj/Debug/netcoreapp2\.1/
 tests/Shelter/Shelter\.Web\.Tests/obj/Debug/netcoreapp2\.1/
 
 tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/obj/
+
+tests/Shelter\.Auth/Shelter\.Auth\.Data\.Tests/bin/Debug/netcoreapp2\.1/
+
+tests/Shelter\.Auth/Shelter\.Auth\.Web\.Tests/bin/Debug/netcoreapp2\.1/
+
+tests/Shelter/Shelter\.Data\.Tests/bin/Debug/netcoreapp2\.1/
+
+tests/Shelter/Shelter\.Web\.Tests/bin/Debug/netcoreapp2\.1/

@@ -11,14 +11,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthUser.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthUser.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/AuthUser.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
               <folding>
                 <marker date="1532191750817" expanded="true" signature="55:103" ph="{...}" />
                 <marker date="1532191750817" expanded="true" signature="95:101" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shelter.Auth.Core.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/Shelter.Auth.Core.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthContext.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Data/AuthContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+              <folding>
+                <marker date="1532173768661" expanded="true" signature="6:93" ph="..." />
+                <marker date="1532173768661" expanded="true" signature="112:262" ph="{...}" />
+                <marker date="1532173768661" expanded="true" signature="170:260" ph="{...}" />
+                <marker date="1532173768661" expanded="true" signature="249:257" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -66,7 +90,7 @@
     <setting file="file://$PROJECT_DIR$/src/Shelter/Shelter.Localization/ILocalization.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Shelter/Shelter.Localization/Localization.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/04/ed7059a8/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Data/AuthContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Data/AuthContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8C31CF8-9D63-4537-93AA-C41656C69DAF/18/118240bc/HostingAbstractionsWebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Shelter/Shelter.Validation/Class1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8C31CF8-9D63-4537-93AA-C41656C69DAF/9a/d01102b9/IWebHostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -123,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Shelter/Shelter.Web/Controllers/ShelterController.cs" />
         <option value="$PROJECT_DIR$/src/Shelter/Shelter.Web/Filters/ModelStateFilter.cs" />
         <option value="$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Web/Validation/Username.cs" />
         <option value="$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Web/Validation/Attribule.cs" />
@@ -174,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/Shelter/Shelter.Localozation/Class1.cs" />
         <option value="$PROJECT_DIR$/src/Shelter/Shelter.Localization/Class1.cs" />
         <option value="$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/AuthUser.cs" />
+        <option value="$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/Shelter.Auth.Core.csproj" />
       </list>
     </option>
   </component>
@@ -186,7 +210,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="234" />
     <option name="y" value="210" />
     <option name="width" value="1440" />
@@ -227,6 +251,13 @@
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Shelter.Auth" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Shelter.Auth.Core" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Shelter (13 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shelter.Auth" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shelter.Auth.Data" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -315,12 +346,12 @@
       <workItem from="1532172401060" duration="1207000" />
       <workItem from="1532173629783" duration="11720000" />
       <workItem from="1532185563746" duration="5342000" />
-      <workItem from="1532191215498" duration="536000" />
+      <workItem from="1532191215498" duration="803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30125000" />
+    <option name="totallyTimeSpent" value="30392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +364,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Errors In Solution" order="0" />
@@ -344,7 +374,7 @@
       <window_info anchor="bottom" id="NuGet" order="0" weight="0.7128713" />
       <window_info anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.16527633" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Build" order="13" visible="true" weight="0.32970297" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.32970297" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -405,13 +435,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/466B67B5-5191-45C7-90F8-38C666173BEB/87/451000df/JsonResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Web/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -676,18 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Data/AuthContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <marker date="1532173768661" expanded="true" signature="6:93" ph="..." />
-            <marker date="1532173768661" expanded="true" signature="170:260" ph="{...}" />
-            <marker date="1532173768661" expanded="true" signature="249:257" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shelter/Shelter.Validation/Class1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -763,13 +774,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/Shelter.Auth.Core.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Core/AuthUser.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
             <marker date="1532191750817" expanded="true" signature="55:103" ph="{...}" />
             <marker date="1532191750817" expanded="true" signature="95:101" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shelter.Auth/Shelter.Auth.Data/AuthContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <marker date="1532173768661" expanded="true" signature="6:93" ph="..." />
+            <marker date="1532173768661" expanded="true" signature="112:262" ph="{...}" />
+            <marker date="1532173768661" expanded="true" signature="170:260" ph="{...}" />
+            <marker date="1532173768661" expanded="true" signature="249:257" ph="{...}" />
           </folding>
         </state>
       </provider>
