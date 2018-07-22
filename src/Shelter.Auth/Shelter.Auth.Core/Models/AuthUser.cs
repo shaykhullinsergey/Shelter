@@ -7,6 +7,6 @@ namespace Shelter
 	{
 		public string ConfirmationCode { get; set; }
 		
-		public virtual ICollection<RefreshToken> RefreshTokens { get; set; }
+		public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 
-namespace Shelter.Attributes
+namespace Shelter
 {
 	public class ServiceAuthorizeAttribute : AuthorizeAttribute
 	{

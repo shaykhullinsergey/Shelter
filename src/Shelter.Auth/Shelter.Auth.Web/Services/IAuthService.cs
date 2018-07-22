@@ -38,54 +38,68 @@ namespace Shelter
 
 			if (!result.Succeeded)
 			{
-				var name = new[] { "auth" };
-			
-				var errors = result.Errors
-					.Select(x => new ValidationResult(x.Description, name))
-					.ToArray();
-			
-				throw new ShelterValidationException(errors);
+				throw new ShelterValidationException(HandleValidationErrors(result));
 			}
 
 			await userManager.AddToRoleAsync(user, "user");
-			
 			var code = await userManager.GenerateEmailConfirmationTokenAsync(user);
-
 			await gateway.SendAsync(user.Email, code);
 		}
+		
 
 		public async Task<TokenPair> SignInAsync(string username, string password)
 		{
 			var result = await signInManager.PasswordSignInAsync(username, password, false, false);
-
+			
 			if (result.Succeeded)
 			{
 				var user = await userManager.FindByNameAsync(username);
-
-				var tokens = await generator.GenerateTokenPairAsync(user);
+				return await GenerateToUserAsync(user);
 			}
 			
 			throw new UnauthorizedAccessException();
 		}
 
+		
 		public async Task<TokenPair> ConfirmEmailAsync(string userId, string code)
 		{
 			var user = await userManager.FindByIdAsync(userId);
-
 			var result = await userManager.ConfirmEmailAsync(user, code);
 
 			if (result.Succeeded)
 			{
-				return await generator.GenerateTokenPairAsync(user);
+				return await GenerateToUserAsync(user);
 			}
 			
+			throw new ShelterValidationException(HandleValidationErrors(result));
+		}
+		
+
+		private async Task<TokenPair> GenerateToUserAsync(AuthUser user)
+		{
+			var tokens = await generator.GenerateTokenPairAsync(user);
+
+			var refresh = new RefreshToken
+			{
+				User = user,
+				Token = tokens.Refresh.Token,
+				ExpirationDateTimeUtc = tokens.Refresh.ExpirationDateTimeUtc
+			};
+				
+			user.RefreshTokens.Add(refresh);
+
+			await userManager.UpdateAsync(user);
+
+			return tokens;
+		}
+
+		private ValidationResult[] HandleValidationErrors(IdentityResult result)
+		{
 			var name = new[] { "auth" };
 			
-			var errors = result.Errors
+			return result.Errors
 				.Select(x => new ValidationResult(x.Description, name))
 				.ToArray();
-			
-			throw new ShelterValidationException(errors);
 		}
 	}
 }

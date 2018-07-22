@@ -10,11 +10,6 @@ namespace Shelter
 		public AuthUser User { get; set; }
 		
 		public string Token { get; set; }
-		
-		public string Reason { get; set; }
-		
-		public string UserAgent { get; set; }
-		
 		public DateTime ExpirationDateTimeUtc { get; set; }
 	}
 }

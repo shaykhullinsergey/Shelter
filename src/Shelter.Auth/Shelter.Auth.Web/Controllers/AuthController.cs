@@ -1,20 +1,16 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Shelter.Attributes;
 
 namespace Shelter
 {
 	[Route("auth")]
 	public class AuthController : ShelterController
 	{
-		private readonly UserManager<AuthUser> manager;
 		private readonly IAuthService service;
 
-		public AuthController(UserManager<AuthUser> manager, IAuthService service)
+		public AuthController(IAuthService service)
 		{
-			this.manager = manager;
 			this.service = service;
 		}
 
@@ -35,15 +31,15 @@ namespace Shelter
 			};
 		}
 		
-		[HttpPost("confirmation")]
-		public async Task<TokenJsonModel> Confirmation(ConfirmationJsonModel model)
+		[HttpPost("confirm")]
+		public async Task<TokenJsonModel> Confirm(ConfirmationJsonModel model)
 		{
 			var tokens = await service.ConfirmEmailAsync(model.UserId, model.Code);
-			
+
 			return new TokenJsonModel
 			{
-				Access = tokens.Access,
-				Refresh = tokens.Refresh
+				Access = tokens.Access.Token,
+				Refresh = tokens.Refresh.Token
 			};
 		}
 		
@@ -54,8 +50,8 @@ namespace Shelter
 			
 			return new TokenJsonModel
 			{
-				Access = tokens.Access,
-				Refresh = tokens.Refresh
+				Access = tokens.Access.Token,
+				Refresh = tokens.Refresh.Token
 			};
 		}
 		

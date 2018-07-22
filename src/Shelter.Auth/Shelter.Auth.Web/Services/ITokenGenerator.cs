@@ -8,10 +8,17 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Shelter
 {
+	public class JwtToken
+	{
+		public string Token { get; set; }
+		
+		public DateTime ExpirationDateTimeUtc { get; set; }
+	}
+	
 	public class TokenPair
 	{
-		public string Access { get; set; }
-		public string Refresh { get; set; }
+		public JwtToken Access { get; set; }
+		public JwtToken Refresh { get; set; }
 	}
 	
 	public interface ITokenGenerator
@@ -21,13 +28,13 @@ namespace Shelter
 	
 	public class JwtTokenGenerator : ITokenGenerator
 	{
-		private readonly UserManager<AuthUser> manager;
+		private readonly UserManager<AuthUser> userManager;
 		private readonly AuthConfiguration configuration;
 
-		public JwtTokenGenerator(AuthConfiguration configuration, UserManager<AuthUser> manager)
+		public JwtTokenGenerator(AuthConfiguration configuration, UserManager<AuthUser> userManager)
 		{
 			this.configuration = configuration;
-			this.manager = manager;
+			this.userManager = userManager;
 		}
 		
 		public async Task<TokenPair> GenerateTokenPairAsync(AuthUser user)
@@ -42,9 +49,9 @@ namespace Shelter
 			};
 		}
 		
-		private async Task<string> GenerateJwtTokenAsync(JwtSection section, AuthUser user)
+		private async Task<JwtToken> GenerateJwtTokenAsync(JwtSection section, AuthUser user)
 		{
-			var role = (await manager.GetRolesAsync(user)).Single();
+			var role = (await userManager.GetRolesAsync(user)).Single();
 			
 			var claims = new[]
 			{
@@ -56,7 +63,7 @@ namespace Shelter
 			
 			var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-			var expires = DateTime.Now.AddMinutes(section.ExpireMinutes);
+			var expires = DateTime.UtcNow.AddMinutes(section.ExpireMinutes);
 
 			var token = new JwtSecurityToken(
 				section.Issuer,
@@ -65,8 +72,12 @@ namespace Shelter
 				expires: expires,
 				signingCredentials: credentials
 			);
-
-			return new JwtSecurityTokenHandler().WriteToken(token);
+			
+			return new JwtToken
+			{
+				Token = new JwtSecurityTokenHandler().WriteToken(token),
+				ExpirationDateTimeUtc = expires
+			};
 		}
 	}
 }
