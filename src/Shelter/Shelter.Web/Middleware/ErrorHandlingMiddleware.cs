@@ -26,7 +26,7 @@ namespace Shelter
 			}
 			catch (ShelterValidationException exception)
 			{
-				var model = new ShelterResponseViewModel<Dictionary<string, string[]>>
+				var model = new ShelterResponseJsonModel<Dictionary<string, string[]>>
 				{
 					Success = false,
 					Data = exception.GetValidationMessage()
@@ -36,7 +36,7 @@ namespace Shelter
 			}
 			catch (Exception exception)
 			{
-				var model = new ShelterResponseViewModel<string>
+				var model = new ShelterResponseJsonModel<string>
 				{
 					Success = false,
 					Data = exception.Message
@@ -49,7 +49,7 @@ namespace Shelter
 		private async Task HandleExceptionAsync(
 			HttpContext context, 
 			HttpStatusCode code, 
-			ShelterResponseViewModel model, 
+			ShelterResponseJsonModel model, 
 			IOptions<MvcJsonOptions> options)
 		{
 			var result = JsonConvert.SerializeObject(model, options.Value.SerializerSettings);

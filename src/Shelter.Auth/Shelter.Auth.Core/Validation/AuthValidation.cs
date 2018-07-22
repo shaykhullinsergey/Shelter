@@ -4,9 +4,13 @@
 	{
 		public AuthValidation(ILocalization localization) : base(localization)
 		{
-			Signup = AddSection<SignupSection>();
+			SignUp = AddSection<SignUpSection>();
+			Signin = AddSection<SignInSection>();
+			Confirmation = AddSection<ConfirmationSection>();
 		}
 
-		public SignupSection Signup { get; set; }
+		public SignUpSection SignUp { get; set; }
+		public SignInSection Signin { get; set; }
+		public ConfirmationSection Confirmation { get; set; }
 	}
 }

@@ -17,28 +17,31 @@ namespace Shelter
 		
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddTypedConfiguration(Configuration);
-			services.AddGates();
+			var config = services.AddShelterConfiguration<AuthConfiguration>(Configuration);
+			services.AddShelterGateways();
 			
 			services.AddResponseCaching();
 			services.AddResponseCompression();
 			
-			services.AddLocalization<EnglishAuthLocalization>();
-
-			services.AddSingleton<AuthValidation>();
+			services.AddShelterLocalization<EnglishAuthLocalization>();
+			services.AddShelterValidation<AuthValidation>();
 			
 			services.AddDbContextPool<AuthContext>(options =>
 				options.UseInMemoryDatabase(nameof(AuthContext)));
-
-			services.AddShelterInMemoryDbContextPool<TestContext>();
 			
-			services.AddShelterIdentity();
-			services.AddShelterAuthentication();
+			services.AddAuthIdentity();
+
+			services.AddScoped<IAuthService, AuthService>();
+			services.AddScoped<ITokenGenerator, JwtTokenGenerator>();
+			
+			services.AddShelterAuthentication(config.Auth);
 			services.AddShelterMvc();
 		}
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
+			app.ConfigureInMemoryDatabase();
+			
 			app.UseResponseCaching();
 			app.UseResponseCompression();
 			

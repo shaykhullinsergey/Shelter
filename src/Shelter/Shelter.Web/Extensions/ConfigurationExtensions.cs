@@ -1,15 +1,29 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Shelter
 {
 	public static class ConfigurationExtensions
 	{
-		public static void AddServiceConfiguration(this IServiceCollection services, ServiceConfiguration configuration)
+		private static void AddServiceConfiguration(this IServiceCollection services, ServiceSection section)
 		{
-			services.AddSingleton(configuration);
-			services.AddSingleton(configuration.Credentials);
-			services.AddSingleton(configuration.Services);
-			services.AddSingleton(configuration.Jwt);
+			services.AddSingleton(section);
+			services.AddSingleton(section.Credentials);
+			services.AddSingleton(section.Services);
+			services.AddSingleton(section.Jwt);
+		}
+
+		public static TConfiguration AddShelterConfiguration<TConfiguration>(this IServiceCollection services, IConfiguration configuration)
+			where TConfiguration : Configuration
+		{
+			var instance = Activator.CreateInstance<TConfiguration>();
+			
+			configuration.Bind(instance);
+
+			services.AddSingleton(instance);
+			services.AddServiceConfiguration(instance.Service);
+			return instance;
 		}
 	}
 }

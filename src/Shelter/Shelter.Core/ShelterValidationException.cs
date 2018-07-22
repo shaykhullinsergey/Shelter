@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection.Metadata;
 
 namespace Shelter
 {
@@ -9,6 +10,11 @@ namespace Shelter
 		public IEnumerable<ValidationResult> ValidationResults { get; }
 
 		public ShelterValidationException(IEnumerable<ValidationResult> validationResults)
+		{
+			ValidationResults = validationResults;
+		}
+		
+		public ShelterValidationException(params ValidationResult[] validationResults)
 		{
 			ValidationResults = validationResults;
 		}

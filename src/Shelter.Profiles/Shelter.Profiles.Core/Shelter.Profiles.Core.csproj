@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Shelter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shelter\Shelter.Core\Shelter.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Localization\English\Sections" />
+    <Folder Include="Localization\Russian\Sections" />
+    <Folder Include="Validation\Sections" />
+  </ItemGroup>
+</Project>

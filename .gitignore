@@ -68,3 +68,23 @@ tests/Shelter/Shelter\.Data\.Tests/obj/
 tests/Shelter/Shelter\.Web\.Tests/obj/
 
 tests/Shelter/Shelter\.Core\.Tests/obj/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Core/bin/Debug/netcoreapp2\.1/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Core/obj/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Data/bin/Debug/netcoreapp2\.1/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Data/obj/Debug/netcoreapp2\.1/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Data/obj/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Web/bin/Debug/netcoreapp2\.1/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Web/obj/Debug/netcoreapp2\.1/
+
+tests/Shelter\.Profiles/Shelter\.Profiles\.Data\.Tests/obj/
+
+tests/Shelter\.Profiles/Shelter\.Profiles\.Web\.Tests/obj/
+
+src/Shelter\.Profiles/Shelter\.Profiles\.Web/obj/

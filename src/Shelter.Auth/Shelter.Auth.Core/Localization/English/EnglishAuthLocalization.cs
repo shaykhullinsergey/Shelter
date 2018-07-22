@@ -4,7 +4,9 @@
 	{
 		public EnglishAuthLocalization()
 		{
-			AddSection<SignupSection, EnglishSignupSection>();
+			AddSection<SignUpSection, EnglishSignUpSection>();
+			AddSection<SignInSection, EnglishSignInSection>();
+			AddSection<ConfirmationSection, EnglishConfirmationSection>();
 		}
 	}
 }

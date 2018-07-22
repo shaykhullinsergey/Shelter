@@ -8,11 +8,14 @@ namespace Shelter
 	{
 		public override void OnResultExecuting(ResultExecutingContext context)
 		{
+			var data = (context.Result as ObjectResult)?.Value
+				?? context.Result;
+			
 			var result = new JsonResult(
-				new ShelterResponseViewModel<object>
+				new ShelterResponseJsonModel<object>
 				{
 					Success = context.ModelState.IsValid,
-					Data = (context.Result as ObjectResult).Value
+					Data = data
 				});
 
 			context.Result = result;

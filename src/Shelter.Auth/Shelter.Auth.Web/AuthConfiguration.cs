@@ -3,9 +3,9 @@
 namespace Shelter
 {
 	[DataContract]
-	public class AuthConfiguration
+	public class AuthConfiguration : Configuration
 	{
-		[DataMember(Name = "service")]
-		public ServiceConfiguration Service { get; set; }
+		[DataMember(Name = "auth")]
+		public JwtSection Auth { get; set; }
 	}
 }

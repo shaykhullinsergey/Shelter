@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Shelter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shelter\Shelter.Data\Shelter.Data.csproj" />
+    <ProjectReference Include="..\Shelter.Profiles.Core\Shelter.Profiles.Core.csproj" />
+  </ItemGroup>
+</Project>
