@@ -40,6 +40,8 @@ namespace Shelter
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
+			new EnglishIdentityErrorDescriber(app.ApplicationServices.GetRequiredService<ILocalization>()).DefaultError();
+			
 			app.ConfigureInMemoryDatabase();
 			
 			app.UseResponseCaching();

@@ -15,14 +15,16 @@ namespace Shelter
 		
 		public void Register<TComponent>(Expression<Func<TComponent, object>> expression, string value)
 		{
-			var message = new LocalizationMessage(value);
-			values.Add(GetKey(expression), message);
+			var key = GetKey(expression);
+			var message = new LocalizationMessage(key, value);
+			values.Add(key, message);
 		}
 		
 		public void Register<TComponent, TValue>(Expression<Func<TComponent, object>> expression, string value)
 		{
-			var message = new LocalizationMessage<TValue>(value);
-			values.Add(GetKey(expression), message);
+			var key = GetKey(expression);
+			var message = new LocalizationMessage<TValue>(key, value);
+			values.Add(key, message);
 		}
 		
 		public LocalizationMessage Localize<TComponent>(Expression<Func<TComponent, object>> expression)
@@ -43,7 +45,20 @@ namespace Shelter
 
 		private string GetKey<TComponent>(Expression<Func<TComponent, object>> expression)
 		{
-			var name = ((MemberExpression)expression.Body).Member.Name;
+			string name;
+
+			switch (expression.Body)
+			{
+				case MemberExpression e:
+					name = e.Member.Name;
+					break;
+				case MethodCallExpression e:
+					name = e.Method.Name;
+					break;
+				default:
+					throw new KeyNotFoundException();
+			}
+			
 			var typeName = typeof(TComponent).Name;
 			
 			return $"{typeName}:{name}";

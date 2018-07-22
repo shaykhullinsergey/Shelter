@@ -4,10 +4,13 @@
 	{
 		private readonly string message;
 
-		public LocalizationMessage(string message)
+		public LocalizationMessage(string key, string message)
 		{
+			Key = key;
 			this.message = message;
 		}
+		
+		public string Key { get; }
 
 		public string GetMessage()
 		{
@@ -19,10 +22,13 @@
 	{
 		private readonly string message;
 
-		public LocalizationMessage(string message)
+		public LocalizationMessage(string key, string message)
 		{
+			Key = key;
 			this.message = message;
 		}
+		
+		public string Key { get; }
 
 		public string GetMessage(TValue value)
 		{
